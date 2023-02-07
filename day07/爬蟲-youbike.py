@@ -12,3 +12,4 @@ if __name__ == '__main__':
     for item in youbikes:
         if addr in item['ar']:
             print('可借:{} 可還:{} {} {}'.format(item['sbi'], item['bemp'], item['ar'], item['sna']))
+
