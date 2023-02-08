@@ -38,5 +38,7 @@ if __name__ == '__main__':
 # 分析
 # 條件 : 本益比<= 12 and
     for stock in stocks:
-        if stock["本益比"] <= 5 and stock ['殖利率'] >= 10 and stock['股價淨值比'] < 1:
+        if stock['本益比'] <= 5 and stock['殖利率'] >= 10 and stock['股價淨值比'] < 1:
+            stock['價格'] = get_stock_price(stock['證券代號'])
+            time.sleep(1)
             print(stock)
