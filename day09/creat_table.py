@@ -14,7 +14,7 @@ sql = '''
 # 1. 連線到資料庫
 conn = sqlite3.connect('demo.db')
 # 2. 取得資料庫操作路徑 -> cursor(操作指標)
-cursor = conn.cursor()
+cursor = conn.cursor()   # cursor是 變數 也寫成cur
 # 執行sql 語句
 cursor = cursor.execute(sql)
 print('建立資料表')
